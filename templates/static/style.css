@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f9f4;
+  color: #333;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  background: #4caf50;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+a:hover {
+  background: #388e3c;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+  width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plant Shop</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🌱 Online Plant Shop</h1>
+  <a href="/cart">🛒 Cart</a>
+  <div class="grid">
+    {% for p in plants %}
+      <div class="card">
+        <img src="{{ p.image }}" width="120"><br>
+        <h3>{{ p.name }}</h3>
+        <p>₹{{ p.price }}</p>
+        <a href="/add_to_cart/{{ p.id }}">Add to Cart</a>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
